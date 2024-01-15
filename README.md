@@ -1,2 +1,7 @@
-# vim_neovim
-My vim and neovim configurations, I'm trying to keep parity between both.
+# My (Neo)Vim configuration.
+I love both vim and neovim and need to use both on a daily basis, I'm trying to keep them as similar as possible.
+
+# Dependencies
+...
+...
+...
