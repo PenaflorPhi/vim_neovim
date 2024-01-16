@@ -52,7 +52,6 @@ local options = {
     backup=fasle,
     swapfile=false,
     undofile=true,
-    undodir = vim.fn.expand('~/.config/nvim/.undodir/'),
     clipboard="unnamedplus",
 
     -- ===========================================
@@ -68,5 +67,14 @@ end
 -- ============================= 
 -- vim cmds                      
 -- =============================
-vim.cmd('colorscheme desert')
 vim.cmd('syntax enable')
+
+
+-- =============================
+-- Plugins
+-- =============================
+require("argos.lazy")
+require("argos.plugins")
+
+
+vim.cmd[[colorscheme tokyonight-night]]
