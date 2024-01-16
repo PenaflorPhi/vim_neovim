@@ -26,7 +26,9 @@ set showmode                           "Shows the mode vim is currently in.
 set showtabline=2                      "Displays the tab bar.
 
 set background=dark
-set termguicolors                      "Enables truecolor (256 colors).
+if has(("termguicolors"))
+    set termguicolors                      "Enables truecolor (256 colors).
+endif
 set colorcolumn=88                     "Highlights columns {...,80,88,...}.
 set cursorcolumn                       "Highlights the current column being edited.
 set cursorline                         "Highlights the current line being edited.
@@ -60,8 +62,16 @@ set clipboard=unnamedplus              "Allows vim to use the system's clipboard
 " This has to do with how completions are displayed... I think.
 set completeopt=menu,preview,noselect   
 
-" ============================= "
-" vim cmds                      "
-" ============================= "
+" ============================== "
+" vim cmds                       "
+" ============================== "
 syntax enable
-colorscheme desert
+
+" ============================== "
+" Plugins
+" ============================== "
+call plug#begin()
+Plug 'cocopon/iceberg.vim', { 'as': 'iceberg' }
+call plug#end()
+
+colorscheme iceberg
