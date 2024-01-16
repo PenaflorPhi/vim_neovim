@@ -1,7 +1,6 @@
 " ============================== "
 " General Options                "
 " ============================== "
-
 set title                              "Allows vim to change title of the terminal based on the  file.
 
 set hlsearch                           "Highlights all occurrences of the current search pattern.
@@ -14,23 +13,23 @@ set smartindent                        "Automatically adjust indentation.
 set number
 set relativenumber
 set numberwidth=1
-set laststatus=2                       "Displays the status bar.
+set signcolumn=auto                    "Displays the signs column, if any.
+
 set scrolloff=8                        "Minimum number of lines to keep above and below cursor.
-set showmode                           "Shows the mode vim is currently in.
-set showtabline=2                      "Displays the tab bar.
 set sidescrolloff=8                    "How much of the current line to keep visible on the sides.
+
+set cmdheight=1
+set laststatus=2                       "Displays the status bar.
 set pumheight=10                       "Height of the pop up menu,
 set showcmd
-set signcolumn=auto                    "Displays the signs column, if any.
+set showmode                           "Shows the mode vim is currently in.
+set showtabline=2                      "Displays the tab bar.
 
 set background=dark
 set termguicolors                      "Enables truecolor (256 colors).
-set cmdheight=1
 set colorcolumn=88                     "Highlights columns {...,80,88,...}.
 set cursorcolumn                       "Highlights the current column being edited.
 set cursorline                         "Highlights the current line being edited.
-
-colorscheme desert
 
 set expandtab                          "Expands all \tabs into spaces.
 set tabstop=4                          "How many columns wide is each tab.
@@ -42,7 +41,6 @@ set fileencoding=utf-8
 set spell
 set spelllang=en,es
 set spellsuggest=10
-syntax enable
 
 set timeoutlen=150
 set updatetime=50
@@ -53,12 +51,17 @@ set updatetime=50
 set nobackup                           "Stops vim from creating backup files, those with the '~' appended.
 set noswapfile                         "Stops vim from creating swap files, those ending with \".swp\".
 set undofile                           "Creates an undofile, literally the best way to recover.
-set undodir=~/.vim/undodir             "Locations for the undofiles.
+set undodir=~/.vim/.undodir
 set clipboard=unnamedplus              "Allows vim to use the system's clipboard.
 
 " ============================== "
 " Completions and other stuff    "
 " ============================== "
+" This has to do with how completions are displayed... I think.
+set completeopt=menu,preview,noselect   
 
-
-set completeopt=menu,menuone,preview,noselect   "This has to do with how completions are displayed... I think.
+" ============================= "
+" vim cmds                      "
+" ============================= "
+syntax enable
+colorscheme desert
