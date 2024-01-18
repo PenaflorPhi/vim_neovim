@@ -67,6 +67,9 @@ set completeopt=menu,preview,noselect
 " ============================== "
 syntax enable
 
+"" source /home/angel/.vim/autocmds/c.vim
+source /home/angel/.vim/autoload/plug.vim
+
 " ============================== "
 " Plugins
 " ============================== "
@@ -77,3 +80,4 @@ call plug#end()
 
 
 colorscheme catppuccin
+
