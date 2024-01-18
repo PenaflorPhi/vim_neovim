@@ -27,7 +27,7 @@ set showtabline=2                      "Displays the tab bar.
 
 set background=dark
 if has(("termguicolors"))
-    set termguicolors                      "Enables truecolor (256 colors).
+    set termguicolors                  "Enables truecolor (256 colors).
 endif
 set colorcolumn=88                     "Highlights columns {...,80,88,...}.
 set cursorcolumn                       "Highlights the current column being edited.
@@ -54,7 +54,9 @@ set nobackup                           "Stops vim from creating backup files, th
 set noswapfile                         "Stops vim from creating swap files, those ending with \".swp\".
 set undofile                           "Creates an undofile, literally the best way to recover.
 set undodir=~/.vim/.undodir
-set clipboard=unnamedplus              "Allows vim to use the system's clipboard.
+if has(("clipboard"))
+    set clipboard=unnamedplus          "Allows vim to use the system's clipboard.
+endif
 
 " ============================== "
 " Completions and other stuff    "
@@ -68,7 +70,7 @@ set completeopt=menu,preview,noselect
 syntax enable
 
 "" source /home/angel/.vim/autocmds/c.vim
-source /home/angel/.vim/autoload/plug.vim
+"" source /home/angel/.vim/autoload/plug.vim
 
 " ============================== "
 " Plugins
