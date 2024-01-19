@@ -69,17 +69,19 @@ set completeopt=menu,preview,noselect
 " ============================== "
 syntax enable
 
-"" source /home/angel/.vim/autocmds/c.vim
-"" source /home/angel/.vim/autoload/plug.vim
-
 " ============================== "
 " Plugins
 " ============================== "
 call plug#begin()
-Plug 'cocopon/iceberg.vim', { 'as': 'iceberg' }
-Plug 'catppuccin/nvim', { 'as' : 'catpuccin'}
+""" Colorschemes """
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
+" ============================= "
+" Source files                  "
+" ============================= "
+source /home/$USERNAME/.vim/autoload/plug.vim
+source /home/$USERNAME/.vim/autoload/keymaps.vim
 
-colorscheme catppuccin
-
+silent! colorscheme evening
+silent! colorscheme dracula
