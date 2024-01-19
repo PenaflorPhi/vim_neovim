@@ -33,6 +33,8 @@ vim.api.nvim_set_keymap("n", "<A-Right>", ":bnext<CR>", opts)
 --===================================
 -- Text related                      |
 --===================================|
+vim.api.nvim_set_keymap("i", "<C-BS>", "<Esc>bDa", opts)
+vim.api.nvim_set_keymap("n", "<C-BS>", "bD", opts)
 vim.api.nvim_set_keymap("v", "<S-Tab>", "<gv", opts)
 vim.api.nvim_set_keymap("v", "<Tab>", ">gv", opts)
 vim.api.nvim_set_keymap("v", "<", "<gv", opts)

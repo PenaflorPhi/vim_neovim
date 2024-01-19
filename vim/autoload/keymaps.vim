@@ -25,6 +25,10 @@ nnoremap <C-f> gf
 " =========================
 " Text Related
 " =========================
+
+nnoremap <C-BS> bD
+inoremap <C-BS> <Esc>bDa
+
 nnoremap <S-Tab> V<gV
 nnoremap <Tab> V>gV
 nnoremap < V<gV

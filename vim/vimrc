@@ -73,7 +73,7 @@ syntax enable
 " Plugins
 " ============================== "
 call plug#begin()
-""" Colorschemes """
+"Colorschemes"
 Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
