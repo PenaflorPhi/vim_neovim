@@ -1,5 +1,5 @@
-let mapleader = " "
-let maplocalleader = " "
+let mapleader = ' '
+let maplocalleader = ' '
 
 " =========================
 " Buffer navigation
@@ -29,8 +29,6 @@ nnoremap <C-f> gf
 nnoremap <C-BS> bD
 inoremap <C-BS> <Esc>bDa
 
-nnoremap <S-Tab> V<gV
-nnoremap <Tab> V>gV
 nnoremap < V<gV
 nnoremap > V>gV
 nnoremap <C-/> :nohlsearch<CR>
@@ -48,3 +46,10 @@ nnoremap <A-u> zug
 " Hop
 " =========================
 nnoremap <S-s> /
+
+" =========================
+" ALE
+" =========================
+nnoremap <leader>n :ALENext<CR>
+nnoremap <leader>p :ALEPrevious<CR>
+nnoremap <leader>f :ALEFix<CR>
