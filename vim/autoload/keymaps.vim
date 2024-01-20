@@ -50,6 +50,6 @@ nnoremap <S-s> /
 " =========================
 " ALE
 " =========================
-nnoremap <leader>n :ALENext<CR>
-nnoremap <leader>p :ALEPrevious<CR>
+nnoremap <C-n> :ALENext<CR>
+nnoremap <C-p> :ALEPrevious<CR>
 nnoremap <leader>f :ALEFix<CR>
