@@ -38,7 +38,7 @@ xnoremap z :fold<CR>
 " Dictionary
 " =========================
 nnoremap <A-n> ]s
-nnoremap <A-c> z=
+nnoremap <A-f> z=
 nnoremap <A-a> zg
 nnoremap <A-u> zug
 
