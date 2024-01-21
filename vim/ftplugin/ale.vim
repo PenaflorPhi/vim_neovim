@@ -7,6 +7,17 @@ let g:ale_completion_enabled = 1
 let g:ale_completion_autoimport = 1
 let g:ale_fix_on_save = 1
 
+" =======================
+" Python Specific
+" =======================
+let g:ale_python_auto_pipenv = 1
+let g:ale_python_auto_virtualenv = 1
+
+let g:ale_python_bandit_use_global = 1
+let g:ale_python_bandit_auto_pipenv = 1
+
+
+
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'c': ['clang-format'],
@@ -17,6 +28,6 @@ let g:ale_fixers = {
 let g:ale_linters = {
 \   'c': ['clang', 'clangd', 'clangtidy', 'cppcheck'],
 \   'cpp': ['clang', 'clangd', 'clangtidy', 'cppcheck'],
-\   'python': ['flake8', 'ruff', 'mypy', 'bandit'],
+\   'python': ['flake8', 'ruff'],
 \   'vim': ['vint'],
 \}
