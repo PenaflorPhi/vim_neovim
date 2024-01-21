@@ -13,7 +13,7 @@ set smartindent                        "Automatically adjust indentation.
 set number
 set relativenumber
 set numberwidth=1
-set signcolumn=auto                    "Displays the signs column, if any.
+set signcolumn=yes                    "Displays the signs column, if any.
 
 set scrolloff=8                        "Minimum number of lines to keep above and below cursor.
 set sidescrolloff=8                    "How much of the current line to keep visible on the sides.
@@ -62,7 +62,7 @@ endif
 " Completions and other stuff    "
 " ============================== "
 " This has to do with how completions are displayed... I think.
-set completeopt=menu,preview,noselect   
+set completeopt=menu,preview,noselect
 
 " ============================== "
 " vim cmds                       "
@@ -76,6 +76,7 @@ call plug#begin()
 "Colorschemes"
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'dense-analysis/ale', { 'as' : 'ale' }
+Plug 'tomtom/tcomment_vim', { 'as': 'tcomment'}
 call plug#end()
 
 " ============================= "

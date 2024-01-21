@@ -8,9 +8,6 @@ nnoremap <leader>e :Ex<CR>
 nnoremap <A-Left> :bprev<CR>
 nnoremap <A-Right> :bnex<CR>
 
-" =========================
-" Text navigation
-" =========================
 nnoremap <C-Left> B
 nnoremap <C-Down> G
 nnoremap <C-Right> W
@@ -25,14 +22,16 @@ nnoremap <C-f> gf
 " =========================
 " Text Related
 " =========================
-
 nnoremap <C-BS> bD
 inoremap <C-BS> <Esc>bDa
 
 nnoremap < V<gV
 nnoremap > V>gV
-nnoremap <C-/> :nohlsearch<CR>
+nnoremap <A-/> :nohlsearch<CR>
 xnoremap z :fold<CR>
+
+noremap <C-/> :TComment<CR>
+
 
 " =========================
 " Dictionary

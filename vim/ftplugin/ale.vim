@@ -28,6 +28,7 @@ let g:ale_fixers = {
 let g:ale_linters = {
 \   'c': ['clang', 'clangd', 'clangtidy', 'cppcheck'],
 \   'cpp': ['clang', 'clangd', 'clangtidy', 'cppcheck'],
+\   'make': ['checkmake'],
 \   'python': ['flake8', 'ruff'],
 \   'vim': ['vint'],
 \}
