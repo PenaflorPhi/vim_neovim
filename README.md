@@ -27,13 +27,15 @@ cd vim_neovim
 
 ## 🎨 My favourite colorschemes
 ### Vim
-- [Dracula](https://github.com/dracula/vim)
-- [Gruvbox](https://github.com/morhetz/gruvbox)
-- [Catpuccin](https://github.com/catppuccin/vim)
+- [catpuccin/vim](https://github.com/catppuccin/vim)
+- [dracula/vim](https://github.com/dracula/vim)
+- [joshdick/OneDark](https://github.com/joshdick/onedark.vim)
+- [morhetz/gruvbox](https://github.com/morhetz/gruvbox)
 ### Neovim
-- [TokyoNight](https://github.com/folke/tokyonight.nvim)
-- [Kanawaga](https://github.com/rebelot/kanagawa.nvim)
-- [Catpuccin](https://github.com/catppuccin/nvim)
+- [catpuccin/nvim](https://github.com/catppuccin/nvim)
+- [folke/tokyonight](https://github.com/folke/tokyonight.nvim)
+- [navarasu/onedark](https://github.com/navarasu/onedark.nvim)
+- [rebelot/kanawaga](https://github.com/rebelot/kanagawa.nvim)
 
 ## 🔌 My favourite plugins
 ### Vim
