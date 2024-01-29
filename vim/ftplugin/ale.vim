@@ -2,7 +2,7 @@
 " General configuration
 " ========================
 let g:ale_virtualtext_cursor = 'current'
-let g:ale_linters_explicit = 0
+let g:ale_linters_explicit = 1
 let g:ale_completion_enabled = 1
 let g:ale_completion_autoimport = 1
 let g:ale_fix_on_save = 1
@@ -19,16 +19,18 @@ let g:ale_python_bandit_auto_pipenv = 1
 
 
 let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'c': ['clang-format'],
-\   'cpp': ['clang-format'],
-\   'python': ['black', 'isort', 'ruff'],
-\}
+            \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+            \   'c': ['clang-format', 'clangtidy'],
+            \   'cpp': ['clang-format', 'clangtidy'],
+            \   'python': ['black', 'isort', 'ruff', 'ruff_format'],
+            \   'sh': ['shfmt']
+            \}
 
 let g:ale_linters = {
-\   'c': ['clang', 'clangd', 'clangtidy', 'cppcheck'],
-\   'cpp': ['clang', 'clangd', 'clangtidy', 'cppcheck'],
-\   'make': ['checkmake'],
-\   'python': ['flake8', 'ruff'],
-\   'vim': ['vint'],
-\}
+            \   'c': ['clang', 'clangd', 'cc','ccls','clangtidy', 'cppcheck'],
+            \   'cpp': ['clang', 'clangd', 'cc','ccls','clangtidy', 'cppcheck'],
+            \   'make': ['checkmake'],
+            \   'python': ['flake8', 'ruff'],
+            \   'sh': ['language_server', 'shellcheck', 'shell'],
+            \   'vim': ['ale_custom_linting_rules', 'vimls', 'vint'],
+            \}
