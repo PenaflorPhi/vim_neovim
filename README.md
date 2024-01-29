@@ -1,7 +1,4 @@
 ## 🔽 Installation
-
-** WARNING: ** This is incomplete, do not run it yet... 
-
 ```
 git clone https://github.com/PenaflorPhi/vim_neovim
 cd vim_neovim
