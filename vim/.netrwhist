@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/angel/Projects/vim_neovim/vim/ftplugin'
+let g:netrw_dirhist_9='/home/angel/Projects/vim_neovim/vim/autoload'
+let g:netrw_dirhist_8='/home/angel/Projects/Dotfiles/bspwm'
+let g:netrw_dirhist_7='/home/angel/Projects/Dotfiles/sxhkd'
+let g:netrw_dirhist_6='/home/angel/.vim/ftplugin'
+let g:netrw_dirhist_5='/home/angel/.vim/autoload'
+let g:netrw_dirhist_4='/home/angel/.vim'
+let g:netrw_dirhist_3='/home/angel/.vim/ftplugin'
+let g:netrw_dirhist_2='/home/angel/.vim'
+let g:netrw_dirhist_1='/home/angel/.config/sxhkd'
