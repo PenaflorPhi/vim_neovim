@@ -9,9 +9,7 @@ nnoremap <A-Left> :bprev<CR>
 nnoremap <A-Right> :bnex<CR>
 
 nnoremap <C-Left> B
-nnoremap <C-Down> G
 nnoremap <C-Right> W
-nnoremap <C-Up> gg
 
 nnoremap <S-Left> 0
 nnoremap <S-Right> $
