@@ -10,6 +10,8 @@ set wrap
 set smartcase                          "Case insensitive search if pattern contains no cased letters.
 set smartindent                        "Automatically adjust indentation.
 
+set modifiable
+
 set number
 set relativenumber
 set numberwidth=1

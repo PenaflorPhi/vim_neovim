@@ -4,6 +4,7 @@ local options = {
     -- ===============================
     title = true,
 
+    modifiable = true,
     hlsearch = true,
     ignorecase = true,
     linebreak = true,
