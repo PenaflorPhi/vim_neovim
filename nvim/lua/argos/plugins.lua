@@ -20,4 +20,7 @@ require("lazy").setup({
     },
     { "saadparwaiz1/cmp_luasnip" },
     { "onsails/lspkind.nvim" },
+
+    -- Treesitter
+    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 })

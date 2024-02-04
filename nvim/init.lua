@@ -81,6 +81,7 @@ require("argos.conform")
 require("argos.nvim-lint")
 require("argos.cmp")
 require("argos.lspkind")
+require("argos.treesitter")
 
 vim.cmd([[colorscheme tokyonight-night]])
 
