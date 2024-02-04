@@ -1,3 +1,10 @@
 require("lazy").setup({
-    {"folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {}},
+    -- Colorscheme
+    { "folke/tokyonight.nvim", lazy = false, priority = 1000 },
+
+    -- Linters and Formatters
+    { "stevearc/conform.nvim" },
+    { "mfussenegger/nvim-lint" },
+
+    -- Completions
 })

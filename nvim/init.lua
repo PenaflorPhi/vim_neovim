@@ -2,72 +2,70 @@ local options = {
     -- ===============================
     -- General Options              --
     -- ===============================
-    title=true,
-    
-    hlsearch=true,
-    ignorecase=true,
-    linebreak=true,
-    wrap=true,
-    smartcase=true,
-    smartindent=true,
+    title = true,
 
-    number=true,
-    relativenumber=true,
-    numberwidth=1,
-    signcolumn=auto,
+    hlsearch = true,
+    ignorecase = true,
+    linebreak = true,
+    wrap = true,
+    smartcase = true,
+    smartindent = true,
 
-    scrolloff=8,
-    sidescroll=8,
+    number = true,
+    relativenumber = true,
+    numberwidth = 1,
+    signcolumn = "yes",
 
-    cmdheight=1,
-    laststatus=2,
-    pumheight=10,
-    showcmd=true,
-    showmode=true,
-    showtabline=2,
+    scrolloff = 8,
+    sidescroll = 8,
 
-    background="dark",
-    termguicolors=true,
-    colorcolumn="88",
-    cursorcolumn=true,
-    cursorline=true,
-    
-    expandtab=true,
-    tabstop=4,
-    shiftwidth=4,
+    cmdheight = 1,
+    laststatus = 2,
+    pumheight = 10,
+    showcmd = true,
+    showmode = true,
+    showtabline = 2,
 
-    mouse="a",
+    background = "dark",
+    termguicolors = true,
+    colorcolumn = "88",
+    cursorcolumn = true,
+    cursorline = true,
 
-    fileencoding="utf-8",
-    spell=true,
-    spelllang="en,es",
-    spellsuggest="10",
-    
-    timeoutlen=150,
-    updatetime=50,
+    expandtab = true,
+    tabstop = 4,
+    shiftwidth = 4,
+
+    fileencoding = "utf-8",
+    spell = true,
+    spelllang = "en,es",
+    spellsuggest = "10",
+
+    timeoutlen = 150,
+    updatetime = 50,
 
     -- ============================
     -- Sane defaults
     -- ============================
-    backup=fasle,
-    swapfile=false,
-    undofile=true,
-    clipboard="unnamedplus",
+    backup = false,
+    swapfile = false,
+    undofile = true,
+    clipboard = "unnamedplus",
 
     -- ===========================================
-    -- This is related to completions... I think. 
+    -- This is related to completions... I think.
     -- ===========================================
-    completeopt="menu,preview,noselect"
+    completeopt = "menu,preview,noselect",
 }
 
 for i, j in pairs(options) do
     vim.opt[i] = j
 end
 
--- ============================= 
--- vim cmds                      
 -- =============================
-vim.cmd('syntax enable')
+-- vim cmds
+-- =============================
+vim.cmd("syntax enable")
 
 -- =============================
 -- Keymaps
@@ -79,6 +77,12 @@ require("keymaps")
 -- =============================
 require("argos.lazy")
 require("argos.plugins")
+require("argos.conform")
+require("argos.nvim-lint")
 
+vim.cmd([[colorscheme tokyonight-night]])
 
-vim.cmd[[colorscheme tokyonight-night]]
+vim.cmd([[
+  command! -nargs=0 -bar WQ :wq
+  command! -nargs=0 -bar Wq :wq
+]])

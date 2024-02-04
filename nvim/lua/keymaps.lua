@@ -1,22 +1,18 @@
 local opts = { noremap = true, silent = true }
-vim.api.nvim_set_keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 --===================================|
 -- File Explorer                     |
 --===================================|
--- vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
-vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>e", ":Explore<CR>", opts)
 
 --===================================|
 -- Windows                           |
 --===================================|
 -- Window navigation
 vim.api.nvim_set_keymap("n", "<C-Left>", "B", opts)
-vim.api.nvim_set_keymap("n", "<C-Down>", "G", opts)
 vim.api.nvim_set_keymap("n", "<C-Right>", "W", opts)
-vim.api.nvim_set_keymap("n", "<C-Up>", "gg", opts)
 
 vim.api.nvim_set_keymap("n", "<S-Left>", "0", opts)
 vim.api.nvim_set_keymap("n", "<S-Right>", "$", opts)
@@ -42,13 +38,15 @@ vim.api.nvim_set_keymap("v", ">", ">gv", opts)
 vim.api.nvim_set_keymap("v", "z", ":fold<CR>", opts)
 
 vim.api.nvim_set_keymap("n", "<C-d>", "ggVGd", opts)
-vim.api.nvim_set_keymap("n", "<C-/>", ":nohlsearch<CR>", opts)
+vim.api.nvim_set_keymap("n", "<A-/>", ":nohlsearch<CR>", opts)
+
+vim.api.nvim_set_keymap("n", "<leader>f", ":Format<CR>", opts)
 
 --===================================|
 -- Dictionary                        |
 --===================================|
 vim.api.nvim_set_keymap("n", "<A-n>", "]s", opts)
-vim.api.nvim_set_keymap("n", "<A-c>", "z=", opts)
+vim.api.nvim_set_keymap("n", "<A-s>", "z=", opts)
 vim.api.nvim_set_keymap("n", "<A-a>", "zg", opts)
 vim.api.nvim_set_keymap("n", "<A-u>", "zug", opts)
 
