@@ -37,8 +37,6 @@ set expandtab                          "Expands all \tabs into spaces.
 set tabstop=4                          "How many columns wide is each tab.
 set shiftwidth=4                       "How many columns wide is each indentation.
 
-set mouse="a"                          "Allows the mouse to be used on all modes.
-
 set fileencoding=utf-8
 set spell
 set spelllang=en,es
@@ -86,7 +84,6 @@ source /home/$USER/.vim/autoload/plug.vim
 source /home/$USER/.vim/autoload/keymaps.vim
 source /home/$USER/.vim/ftplugin/ale.vim
 
-silent! colorscheme evening
 silent! colorscheme dracula
 
 
