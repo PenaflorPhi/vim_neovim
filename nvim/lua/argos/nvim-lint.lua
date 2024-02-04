@@ -9,7 +9,7 @@ cppcheck.args = {
 }
 
 require("lint").linters_by_ft = {
-    c = { "clangtidy", "cppcheck" },
+    c = { "clangtidy" },
     tex = { "chktex" },
     lua = { "luacheck" },
     python = { "ruff", "pylint", "mypy", "pycodestyle" },
