@@ -28,7 +28,7 @@ nnoremap > V>gV
 nnoremap <A-/> :nohlsearch<CR>
 xnoremap z :fold<CR>
 
-noremap <leader>/ :TComment<CR>
+nnoremap <leader>/ :TComment<CR>
 
 
 " =========================
@@ -40,9 +40,9 @@ nnoremap <A-a> zg
 nnoremap <A-u> zug
 
 " =========================
-" Hop
+" Hop / Easymotion
 " =========================
-nnoremap <S-s> /
+" nnoremap <S-s> /
 
 " =========================
 " ALE

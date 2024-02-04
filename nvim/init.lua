@@ -1,4 +1,5 @@
 local options = {
+
     -- ===============================
     -- General Options              --
     -- ===============================
@@ -67,6 +68,9 @@ end
 -- vim cmds
 -- =============================
 vim.cmd("syntax enable")
+vim.opt.list = true
+vim.opt.listchars:append("space:⋅")
+vim.opt.listchars:append("eol:↴")
 
 -- =============================
 -- Keymaps
@@ -83,6 +87,10 @@ require("argos.nvim-lint")
 require("argos.cmp")
 require("argos.lspkind")
 require("argos.treesitter")
+require("argos.lspconfig")
+require("argos.comment")
+require("argos.indent-blankline")
+require("argos.hop")
 
 vim.cmd([[colorscheme tokyonight-night]])
 

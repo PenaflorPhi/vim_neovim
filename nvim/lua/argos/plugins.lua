@@ -23,4 +23,23 @@ require("lazy").setup({
 
     -- Treesitter
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+
+    -- LSP
+    { "neovim//nvim-lspconfig" },
+    { "folke/neodev.nvim", opts = {} },
+
+    -- Markdown & LaTeX
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function() vim.fn["mkdp#util#install"]() end,
+    },
+
+    -- Comment
+    { "numToStr/Comment.nvim", opts = {}, lazy = false },
+
+    -- Testing
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+    { "smoka7/hop.nvim", version = "*", opts = {} },
 })
