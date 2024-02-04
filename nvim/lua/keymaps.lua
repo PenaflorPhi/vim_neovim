@@ -5,8 +5,7 @@ vim.g.maplocalleader = " "
 --===================================|
 -- File Explorer                     |
 --===================================|
--- vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
-vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>e", ":Explore<CR>", opts)
 
 --===================================|
 -- Windows                           |
@@ -40,6 +39,8 @@ vim.api.nvim_set_keymap("v", "z", ":fold<CR>", opts)
 
 vim.api.nvim_set_keymap("n", "<C-d>", "ggVGd", opts)
 vim.api.nvim_set_keymap("n", "<A-/>", ":nohlsearch<CR>", opts)
+
+vim.api.nvim_set_keymap("n", "<leader>f", ":Format<CR>", opts)
 
 --===================================|
 -- Dictionary                        |

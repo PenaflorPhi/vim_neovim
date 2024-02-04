@@ -13,12 +13,15 @@ bandit
 python-pytest
 
 # C Related
-pacman -S shfmt clang ccls gdb
+sudo pacman -S shfmt clang ccls gdb
 
 # Vim Related
-pacman -S npm
+sudo pacman -S npm
 sudo npm install -g vim-language-server
 
 # Shell related
-pacman -S shfmt shellcheck
+sudo pacman -S shfmt shellcheck
 sudo npm install -g bash-language-server
+
+# Lua related
+sudo pacman -S stylua

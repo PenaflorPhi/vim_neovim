@@ -88,3 +88,7 @@ source /home/$USER/.vim/ftplugin/ale.vim
 
 silent! colorscheme evening
 silent! colorscheme dracula
+
+
+command! -nargs=0 -bar WQ :wq
+command! -nargs=0 -bar Wq :wq
