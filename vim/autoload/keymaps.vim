@@ -28,7 +28,7 @@ nnoremap > V>gV
 nnoremap <A-/> :nohlsearch<CR>
 xnoremap z :fold<CR>
 
-noremap <C-/> :TComment<CR>
+noremap <leader>/ :TComment<CR>
 
 
 " =========================
