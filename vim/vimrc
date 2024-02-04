@@ -86,6 +86,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 Plug 'tomtom/tcomment_vim', { 'as': 'tcomment' }
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
 Plug 'easymotion/vim-easymotion', { 'as' : 'easymotion' }
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 filetype plugin indent on
@@ -96,8 +97,9 @@ source /home/$USER/.vim/autoload/plug.vim
 source /home/$USER/.vim/autoload/keymaps.vim
 source /home/$USER/.vim/ftplugin/ale.vim
 source /home/$USER/.vim/ftplugin/easymotion.vim
-
 silent! colorscheme onedark
 
 command! -nargs=0 -bar WQ :wq
 command! -nargs=0 -bar Wq :wq
+
+ let g:airline#extensions#tabline#enabled = 1

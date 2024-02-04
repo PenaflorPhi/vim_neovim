@@ -17,6 +17,9 @@ nnoremap <S-Right> $
 nnoremap <C-d> gd
 nnoremap <C-f> gf
 
+nnoremap <leader>c :bd<CR>
+nnoremap <leader>s :w <CR> :source <CR>
+
 " =========================
 " Text Related
 " =========================
