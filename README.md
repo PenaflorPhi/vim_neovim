@@ -14,10 +14,10 @@ cd vim_neovim
 
 | Language       | LSP                  | Linter                           | Formatter          | Other Tools    |
 | -------------- | -------------------- | -------------------------------- | ------------------ | -------------- |
-| C/C++          | clangd, clss         | Clangcheck, clang-tidy, cppcheck | clang-format       | gdb            |
+| C/C++          | clangd, clss         | clangcheck                       | clang-format       | gdb            |
 | Fortan         | Fortls               | flint                            | fprettify          |                |
 | LaTeX / BibTex | texlab               | chktex, lacheck, bibclean        | prettier, bibclean |                |
-| Lua	         | lua-language-server  | selene, luacheck                 | StyLua             |                |
+| Lua	         | lua-language-server  | luacheck                         | StyLua             |                |
 | Make           |                      | checkmake                        |                    |                |
 | Python         | Ruff, Pyright        | Ruff, Pylint                     | Ruff, isort, Black | Bandit, pytest |
 | SQL            |                      | sqlint, sql-lint, sqlfluff       | pfFormatter        |                |
