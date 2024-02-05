@@ -40,19 +40,11 @@ require("lazy").setup({
     { "numToStr/Comment.nvim", opts = {}, lazy = false },
 
     -- Testing
+    { "nvim-tree/nvim-web-devicons" },
     { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
     { "smoka7/hop.nvim", version = "*", opts = {} },
-    {
-        "akinsho/bufferline.nvim",
-        version = "*",
-        dependencies = "nvim-tree/nvim-web-devicons",
-    },
-    {
-        "nvim-lualine/lualine.nvim",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
-    },
-    {
-        "nvim-tree/nvim-tree.lua",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
-    },
+    { "akinsho/bufferline.nvim", version = "*" },
+    { "nvim-lualine/lualine.nvim" },
+    { "nvim-tree/nvim-tree.lua" },
+    { "NvChad/nvim-colorizer.lua" },
 })

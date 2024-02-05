@@ -1,3 +1,6 @@
+set encoding=utf-8
+scriptencoding utf-8
+
 " ============================== "
 " General Options                "
 " ============================== "
@@ -24,7 +27,7 @@ set cmdheight=1
 set laststatus=2                       "Displays the status bar.
 set pumheight=10                       "Height of the pop up menu,
 set showcmd
-set showmode                           "Shows the mode vim is currently in.
+set noshowmode                           "Shows the mode vim is currently in.
 set showtabline=2                      "Displays the tab bar.
 
 set background=dark
@@ -65,7 +68,7 @@ endif
 " This has to do with how completions are displayed... I think.
 set completeopt=menu,preview,noselect
 
-set virtualedit=all
+set virtualedit=""
 set list
 set showbreak=↪\
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·,eol:↴
@@ -80,15 +83,15 @@ syntax on
 " ============================== "
 call plug#begin()
 "Colorschemes"
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'dense-analysis/ale', { 'as' : 'ale' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'tomtom/tcomment_vim', { 'as': 'tcomment' }
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
 Plug 'easymotion/vim-easymotion', { 'as' : 'easymotion' }
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
-Plug 'Softmotions/vim-dark-frost-theme'
+Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
 filetype plugin indent on
@@ -97,12 +100,12 @@ filetype plugin indent on
 " ============================= "
 source /home/$USER/.vim/autoload/plug.vim
 source /home/$USER/.vim/autoload/keymaps.vim
-source /home/$USER/.vim/ftplugin/ale.vim
-source /home/$USER/.vim/ftplugin/easymotion.vim
-
-silent! colorscheme darkfrost
+source /home/$USER/.vim/plugins/ale.vim
+source /home/$USER/.vim/plugins/easymotion.vim
+source /home/$USER/.vim/plugins/airline.vim
 
 command! -nargs=0 -bar WQ :wq
 command! -nargs=0 -bar Wq :wq
 
-let g:airline#extensions#tabline#enabled = 1
+silent! let ayucolor='dark'
+silent! colorscheme ayu

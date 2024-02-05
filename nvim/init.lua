@@ -79,7 +79,6 @@ vim.cmd([[
   command! -nargs=0 -bar Wq :wq
   command! -nargs=0 -bar Q :q
 ]])
-vim.diagnostic.config({ virtual_text = false })
 vim.diagnostic.config({
     underline = true,
     signs = true,
@@ -91,7 +90,7 @@ vim.diagnostic.config({
         focusable = false,
     },
     update_in_insert = false, -- default to false
-    severity_sort = false, -- default to false
+    severity_sort = true, -- default to false
 })
 
 -- =============================
@@ -104,6 +103,7 @@ require("keymaps")
 -- =============================
 require("argos.lazy")
 require("argos.plugins")
+require("colorizer").setup({})
 require("argos.conform")
 require("argos.nvim-lint")
 require("argos.cmp")
