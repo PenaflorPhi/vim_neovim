@@ -5,15 +5,13 @@ vim.g.maplocalleader = " "
 --===================================|
 -- File Explorer                     |
 --===================================|
-vim.api.nvim_set_keymap("n", "<leader>e", ":Explore<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>e", ":Explore<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 --===================================|
 -- Windows                           |
 --===================================|
 -- Window navigation
-vim.api.nvim_set_keymap("n", "<C-Left>", "B", opts)
-vim.api.nvim_set_keymap("n", "<C-Right>", "W", opts)
-
 vim.api.nvim_set_keymap("n", "<S-Left>", "0", opts)
 vim.api.nvim_set_keymap("n", "<S-Right>", "$", opts)
 
@@ -25,6 +23,10 @@ vim.api.nvim_set_keymap("n", "<C-f>", "gf", opts)
 --===================================|
 vim.api.nvim_set_keymap("n", "<A-Left>", ":bprev<CR>", opts)
 vim.api.nvim_set_keymap("n", "<A-Right>", ":bnext<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-Left>", "<C-w>h", opts)
+vim.api.nvim_set_keymap("n", "<C-Down>", "<C-w>j", opts)
+vim.api.nvim_set_keymap("n", "<C-Up>", "<C-w>k", opts)
+vim.api.nvim_set_keymap("n", "<C-Right>", "<C-w>l", opts)
 
 vim.api.nvim_set_keymap("n", "<leader>c", ":bd<CR>", opts)
 

@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/angel/Projects/vim_neovim/vim'
+let g:netrw_dirhist_7='/home/angel/Projects/vim_neovim'
 let g:netrw_dirhist_6='/home/angel/Projects/vim_neovim/vim/autoload'
 let g:netrw_dirhist_5='/home/angel/Projects/vim_neovim/vim'
 let g:netrw_dirhist_4='/home/angel/Projects/vim_neovim'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_2='/home/angel/Projects/vim_neovim/vim/plugged'
 let g:netrw_dirhist_1='/home/angel/Projects/vim_neovim/vim'
 let g:netrw_dirhist_0='/home/angel/Projects/vim_neovim/vim/autoload'
 let g:netrw_dirhist_9='/home/angel/Projects/vim_neovim/vim'
-let g:netrw_dirhist_8='/home/angel/Projects/vim_neovim/vim/ftplugin'
-let g:netrw_dirhist_7='/home/angel/Projects/vim_neovim/vim'

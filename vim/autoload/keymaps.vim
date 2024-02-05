@@ -4,12 +4,15 @@ let maplocalleader = ' '
 " =========================
 " Buffer navigation
 " =========================
-nnoremap <leader>e :Ex<CR>
+" nnoremap <leader>e :Ex<CR>
+nnoremap <silent> <expr> <leader>e g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
+
 nnoremap <A-Left> :bprev<CR>
 nnoremap <A-Right> :bnex<CR>
-
-nnoremap <C-Left> B
-nnoremap <C-Right> W
+nnoremap <C-Left> <C-w>h
+nnoremap <C-Down> <C-w>j
+nnoremap <C-Up> <C-w>k
+nnoremap <C-Right> <C-w>l
 
 nnoremap <S-Left> 0
 nnoremap <S-Right> $

@@ -68,7 +68,7 @@ set completeopt=menu,preview,noselect
 set virtualedit=all
 set list
 set showbreak=↪\
- set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·,eol:↴
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·,eol:↴
 
 " ============================== "
 " vim cmds                       "
@@ -87,6 +87,7 @@ Plug 'tomtom/tcomment_vim', { 'as': 'tcomment' }
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
 Plug 'easymotion/vim-easymotion', { 'as' : 'easymotion' }
 Plug 'vim-airline/vim-airline'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 filetype plugin indent on
@@ -102,4 +103,4 @@ silent! colorscheme onedark
 command! -nargs=0 -bar WQ :wq
 command! -nargs=0 -bar Wq :wq
 
- let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1

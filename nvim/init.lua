@@ -1,3 +1,6 @@
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 local options = {
 
     -- ===============================
@@ -112,5 +115,6 @@ require("argos.indent-blankline")
 require("argos.hop")
 require("bufferline").setup({})
 require("argos.lualine")
+require("argos.nvim-tree")
 
 vim.cmd([[colorscheme tokyonight-night]])
