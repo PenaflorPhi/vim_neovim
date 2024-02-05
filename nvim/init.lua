@@ -71,6 +71,25 @@ vim.cmd("syntax enable")
 vim.opt.list = true
 vim.opt.listchars:append("space:⋅")
 vim.opt.listchars:append("eol:↴")
+vim.cmd([[
+  command! -nargs=0 -bar WQ :wq
+  command! -nargs=0 -bar Wq :wq
+  command! -nargs=0 -bar Q :q
+]])
+vim.diagnostic.config({ virtual_text = false })
+vim.diagnostic.config({
+    underline = true,
+    signs = true,
+    virtual_text = false,
+    float = {
+        show_header = true,
+        source = "always",
+        border = "rounded",
+        focusable = false,
+    },
+    update_in_insert = false, -- default to false
+    severity_sort = false, -- default to false
+})
 
 -- =============================
 -- Keymaps
@@ -91,10 +110,7 @@ require("argos.lspconfig")
 require("argos.comment")
 require("argos.indent-blankline")
 require("argos.hop")
+require("bufferline").setup({})
+require("argos.lualine")
 
 vim.cmd([[colorscheme tokyonight-night]])
-
-vim.cmd([[
-  command! -nargs=0 -bar WQ :wq
-  command! -nargs=0 -bar Wq :wq
-]])

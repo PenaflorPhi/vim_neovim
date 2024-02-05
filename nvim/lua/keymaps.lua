@@ -26,6 +26,8 @@ vim.api.nvim_set_keymap("n", "<C-f>", "gf", opts)
 vim.api.nvim_set_keymap("n", "<A-Left>", ":bprev<CR>", opts)
 vim.api.nvim_set_keymap("n", "<A-Right>", ":bnext<CR>", opts)
 
+vim.api.nvim_set_keymap("n", "<leader>c", ":bd<CR>", opts)
+
 --===================================
 -- Text related                      |
 --===================================|
