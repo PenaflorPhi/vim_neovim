@@ -31,7 +31,7 @@ inoremap <C-BS> <Esc>bDa
 
 nnoremap < V<gV
 nnoremap > V>gV
-nnoremap <A-/> :nohlsearch<CR>
+nnoremap \ :nohlsearch<CR>
 xnoremap z :fold<CR>
 
 nnoremap <leader>/ :TComment<CR>

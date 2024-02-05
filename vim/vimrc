@@ -88,6 +88,7 @@ Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
 Plug 'easymotion/vim-easymotion', { 'as' : 'easymotion' }
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
+Plug 'Softmotions/vim-dark-frost-theme'
 call plug#end()
 
 filetype plugin indent on
@@ -98,7 +99,8 @@ source /home/$USER/.vim/autoload/plug.vim
 source /home/$USER/.vim/autoload/keymaps.vim
 source /home/$USER/.vim/ftplugin/ale.vim
 source /home/$USER/.vim/ftplugin/easymotion.vim
-silent! colorscheme onedark
+
+silent! colorscheme darkfrost
 
 command! -nargs=0 -bar WQ :wq
 command! -nargs=0 -bar Wq :wq

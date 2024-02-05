@@ -58,4 +58,5 @@ vim.api.nvim_set_keymap("n", "<A-u>", "zug", opts)
 -- Hop
 -- ===============
 -- vim.api.nvim_set_keymap("n", "<S-s>", "/", opts)
-vim.api.nvim_set_keymap("n", "<S-s>", ":HopChar2<CR>", opts)
+vim.api.nvim_set_keymap("n", "s", ":HopChar2<CR>", opts)
+vim.api.nvim_set_keymap("n", "<S-s>", ":HopWord<CR>", opts)
