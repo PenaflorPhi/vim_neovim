@@ -79,6 +79,9 @@ vim.cmd([[
   command! -nargs=0 -bar Wq :wq
   command! -nargs=0 -bar Q :q
 ]])
+
+vim.cmd([[retab]])
+
 vim.diagnostic.config({
     underline = true,
     signs = true,
@@ -92,7 +95,9 @@ vim.diagnostic.config({
     update_in_insert = false, -- default to false
     severity_sort = true, -- default to false
 })
-
+vim.cmd(
+    [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+)
 -- =============================
 -- Keymaps
 -- =============================

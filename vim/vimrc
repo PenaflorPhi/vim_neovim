@@ -77,6 +77,7 @@ set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·,eol:�
 " vim cmds                       "
 " ============================== "
 syntax on
+retab
 
 " ============================== "
 " Plugins
@@ -109,3 +110,4 @@ command! -nargs=0 -bar Wq :wq
 
 silent! let ayucolor='dark'
 silent! colorscheme ayu
+

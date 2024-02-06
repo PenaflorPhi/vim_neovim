@@ -9,7 +9,7 @@ require("conform").setup({
     formatters_by_ft = {
         lua = { "stylua" },
         c = { "clang_format" },
-        cpp = { "clang_format" },
+        -- cpp = { "clang_format" },
         -- latex = { "latexindent", "prettier" },
         python = { "ruff_fix", "ruff_format", "isort", "black" },
         sh = { "shellcheck", "shfmt" },
@@ -30,3 +30,7 @@ vim.api.nvim_create_user_command("Format", function(args)
     end
     require("conform").format({ async = true, lsp_fallback = true, range = range })
 end, { range = true })
+
+require("conform").formatters.shfmt = {
+    prepend_args = { "-i", "4" },
+}
