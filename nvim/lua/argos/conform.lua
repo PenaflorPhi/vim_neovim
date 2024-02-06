@@ -14,6 +14,7 @@ require("conform").setup({
         python = { "ruff_fix", "ruff_format", "isort", "black" },
         sh = { "shellcheck", "shfmt" },
         sql = { "sqlfluff" },
+        markdown = { "prettier" },
         ["*"] = { "trim_whitespace" },
     },
 })
