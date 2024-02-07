@@ -5,6 +5,7 @@ lspconfig.lua_ls.setup({})
 lspconfig.clangd.setup({})
 lspconfig.ruff_lsp.setup({})
 lspconfig.bashls.setup({})
+lspconfig.asm_lsp.setup({})
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

@@ -7,6 +7,7 @@ require("conform").setup({
         lsp_fallback = true,
     },
     formatters_by_ft = {
+        asm = { "asmfmt" },
         lua = { "stylua" },
         c = { "clang_format" },
         -- cpp = { "clang_format" },
