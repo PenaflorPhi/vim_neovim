@@ -47,4 +47,5 @@ require("lazy").setup({
     { "nvim-lualine/lualine.nvim" },
     { "nvim-tree/nvim-tree.lua" },
     { "NvChad/nvim-colorizer.lua" },
+    { "nvim-lua/plenary.nvim" },
 })
